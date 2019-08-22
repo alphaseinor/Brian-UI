@@ -306,3 +306,11 @@ header ul li {
 header .show {
   visibility: visible;
 }
+@media (min-width: 700px) {
+  .menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+  }
+}
