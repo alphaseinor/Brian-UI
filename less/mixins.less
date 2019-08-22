@@ -1,0 +1,29 @@
+.menu-button-config() {
+  position: absolute;
+  z-index: 1100;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.menu-button-line-config() {
+  width: 1.8rem;
+  height: 2px;
+  margin: none;
+  margin-bottom: 0.5rem;
+  background: @font-color;
+  transform: translate(0rem, -0.5rem);
+}
+
+.menu-button-close-line-config() {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(0.1rem, 0rem);
+  }
+  &:nth-child(2) {
+    display: none;
+  }
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(0.4rem, -6px);
+  }
+}
