@@ -188,7 +188,7 @@ a:hover {
   color: #fff;
   transition: 0.5s;
 }
-.login-box .menu-btn {
+.login-box .modal-menu-btn {
   position: absolute;
   z-index: 1100;
   right: 2rem;
@@ -196,7 +196,7 @@ a:hover {
   cursor: pointer;
   transition: all 1s ease-in-out;
 }
-.login-box .menu-btn .btn-line {
+.login-box .modal-menu-btn .btn-line {
   width: 1.8rem;
   height: 2px;
   margin: none;
@@ -204,10 +204,10 @@ a:hover {
   background: #fff;
   transform: translate(0rem, -0.5rem);
 }
-.login-box .menu-btn .btn-line:nth-child(1) {
+.login-box .modal-menu-btn .btn-line:nth-child(1) {
   transform: rotate(45deg) translate(0.1rem, 0rem);
 }
-.login-box .menu-btn .btn-line:nth-child(2) {
+.login-box .modal-menu-btn .btn-line:nth-child(2) {
   transform: rotate(-45deg) translate(0.4rem, -6px);
 }
 .login-box .menu {
