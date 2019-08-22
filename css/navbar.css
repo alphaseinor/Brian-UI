@@ -151,4 +151,14 @@ header .menu-btn .btn-line {
   height: 2px;
   margin: none;
   margin-bottom: 5px;
+  background: #000;
+}
+header .menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(0rem, 0rem);
+}
+header .menu-btn.close .btn-line:nth-child(2) {
+  display: none;
+}
+header .menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(0.3rem, -6px);
 }
