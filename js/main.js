@@ -8,10 +8,14 @@ const navItems = document.querySelectorAll('.nav-item');
 const modalMenuButton = document.querySelector('.modal-menu-btn');
 const loginBox = document.querySelector('.login-box');
 
+//makes login button open modal
+const loginButton = document.querySelector('.open-login-modal');
+
 //menu section does stuff
 //initial state of menu is hidden
 let showMenu = false;
 
+//event listener for mobile friendly menu
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
@@ -34,17 +38,12 @@ function toggleMenu() {
 
 //login click event handler
 modalMenuButton.addEventListener('click', closeModal);
-
-let showLoginBox = false;
+loginButton.addEventListener('click', openModal);
 
 function closeModal() {
-  if (!showLoginBox === false) {
-    loginBox.classList.add('show');
-    showLoginBox = true;
-    console.log('close button is visible');
-  } else {
-    loginBox.classList.remove('show');
-    showLoginBox = false;
-    console.log('close button is not visible');
-  }
+  loginBox.classList.remove('show');
+}
+
+function openModal() {
+  loginBox.classList.add('show');
 }
