@@ -1,0 +1,25 @@
+@import 'reset.less';
+@import 'global.less';
+
+@import 'variables.less';
+@import 'mixins.less';
+
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  .menu-btn {
+    position: absolute;
+    z-index: 1100;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    .btn-line {
+      width: 1.8rem;
+      height: 2px;
+      margin: none;
+      margin-bottom: 5px;
+    }
+  }
+}
