@@ -1,0 +1,52 @@
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 30rem;
+  padding: 4rem;
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0 1.5rem 25rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  color: @font-color;
+  h2 {
+    color: @font-color;
+    margin: 0 0 3rem;
+    padding: 0;
+    text-align: center;
+  }
+  .input-box {
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.6rem;
+      color: @font-color;
+      margin-bottom: 3rem;
+      border: none;
+      border-bottom: 1px solid @font-color;
+      outline: none;
+      background: transparent;
+      &:focus ~ label,
+      &:valid ~ label {
+        top: -1.8rem;
+        left: 0px;
+        color: @main-color;
+        font-size: 1.2rem;
+      }
+    }
+    label {
+      position: absolute;
+      font-size: 1.6rem;
+      padding: 1.6rem;
+      top: 0;
+      left: 0;
+      padding: 1rem 0;
+      color: @font-color;
+      transition: 0.5s;
+    }
+  }
+}
