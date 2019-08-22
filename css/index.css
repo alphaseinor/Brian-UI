@@ -294,6 +294,12 @@ header .menu .menu-nav {
   border-bottom: 1px solid #046604;
   transform: translate3d(0, 0, 0);
 }
+header .menu .menu-nav .nav-item {
+  font-size: 1.5rem;
+}
+header .menu .menu-nav .nav-item.current {
+  display: none;
+}
 header ul {
   display: flex;
   flex-direction: column;
