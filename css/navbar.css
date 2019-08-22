@@ -133,10 +133,16 @@ a {
 a:hover {
   transform: scale(1.1);
 }
+body {
+  background: #fff;
+}
 header {
   position: fixed;
   z-index: 1000;
   width: 100vw;
+  height: 10vh;
+  background: white;
+  border-bottom: 3px dotted #046604;
 }
 header .menu-btn {
   position: absolute;
@@ -163,8 +169,22 @@ header .menu-btn.close .btn-line:nth-child(3) {
   transform: rotate(-45deg) translate(0.3rem, -6px);
 }
 header .menu {
-  display: none;
+  visibility: hidden;
+}
+header .menu .menu-nav {
+  background: white;
+  border-bottom: 1px solid #046604;
+  transform: translate3d(0, 0, 0);
+}
+header ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+header ul li {
+  padding: 1.25rem 3rem;
 }
 header .show {
-  display: flex;
+  visibility: visible;
 }

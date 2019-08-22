@@ -4,10 +4,17 @@
 @import 'variables.less';
 @import 'mixins.less';
 
+body {
+  background: @main-color;
+}
+
 header {
   position: fixed;
   z-index: 1000;
   width: 100vw;
+  height: 10vh;
+  background: white;
+  border-bottom: 3px dotted @border-color;
   .menu-btn {
     position: absolute;
     z-index: 1100;
@@ -37,9 +44,23 @@ header {
     }
   }
   .menu {
-    display: none;
+    visibility: hidden;
+    .menu-nav {
+      background: white;
+      border-bottom: 1px solid @border-color;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    li {
+      padding: 1.25rem 3rem;
+    }
   }
   .show {
-    display: flex;
+    visibility: visible;
   }
 }
