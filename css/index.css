@@ -261,7 +261,7 @@ header {
   position: fixed;
   z-index: 1000;
   width: 100vw;
-  height: 10vh;
+  height: 3rem;
   background: white;
   border-bottom: 3px dotted #046604;
 }
