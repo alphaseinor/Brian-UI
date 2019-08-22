@@ -133,6 +133,17 @@ a {
 a:hover {
   transform: scale(1.1);
 }
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 0.75rem;
+}
+.row h1 {
+  font-size: 1.75rem;
+}
 .login-box {
   visibility: hidden;
   position: absolute;
@@ -255,10 +266,7 @@ header {
   border-bottom: 3px dotted #046604;
 }
 header .menu-btn {
-  position: absolute;
   z-index: 1100;
-  right: 2rem;
-  top: 2rem;
   cursor: pointer;
   transition: all 1s ease-in-out;
 }
@@ -268,7 +276,6 @@ header .menu-btn .btn-line {
   margin: none;
   margin-bottom: 0.5rem;
   background: #000;
-  transform: translate(0rem, -0.5rem);
 }
 header .menu-btn.close .btn-line:nth-child(1) {
   transform: rotate(45deg) translate(0.1rem, 0rem);
