@@ -134,6 +134,8 @@ a:hover {
   transform: scale(1.1);
 }
 .login-box {
+  visibility: hidden;
+  z-index: 1200;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -145,7 +147,6 @@ a:hover {
   box-sizing: border-box;
   box-shadow: 0 1.5rem 25rem rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
-  color: #000;
 }
 .login-box h2 {
   color: #000;
@@ -183,6 +184,9 @@ a:hover {
   padding: 1rem 0;
   color: #000;
   transition: 0.5s;
+}
+.login-box.show {
+  visibility: visible;
 }
 body {
   background: #fff;
