@@ -42,8 +42,10 @@ loginButton.addEventListener('click', openModal);
 
 function closeModal() {
   loginBox.classList.remove('show');
+  console.log('closed modal');
 }
 
 function openModal() {
   loginBox.classList.add('show');
+  console.log('opened modal');
 }
