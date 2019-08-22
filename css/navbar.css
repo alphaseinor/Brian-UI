@@ -144,7 +144,7 @@ header .menu-btn {
   right: 2rem;
   top: 2rem;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 header .menu-btn .btn-line {
   width: 1.8rem;
@@ -161,4 +161,10 @@ header .menu-btn.close .btn-line:nth-child(2) {
 }
 header .menu-btn.close .btn-line:nth-child(3) {
   transform: rotate(-45deg) translate(0.3rem, -6px);
+}
+header .menu {
+  display: none;
+}
+header .show {
+  display: flex;
 }
