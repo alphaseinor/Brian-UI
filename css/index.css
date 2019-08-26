@@ -148,6 +148,10 @@ a:hover {
 .row h1 {
   font-size: 1.75rem;
 }
+main {
+  position: relative;
+  top: 3.5rem;
+}
 .login-box {
   visibility: hidden;
   position: absolute;
