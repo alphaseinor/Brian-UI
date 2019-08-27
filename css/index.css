@@ -321,6 +321,47 @@ header ul li {
 header .show {
   visibility: visible;
 }
+.full-width {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(140, 100, 255, 0.2)), url(../img/abstractSmall.png);
+  height: 90vh;
+}
+.full-width section {
+  opacity: 90;
+  position: relative;
+  top: 10%;
+  text-align: center;
+}
+.full-width section h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+.full-width section h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+.full-width section .mouse {
+  position: relative;
+  margin-top: 2rem;
+  left: 43%;
+}
+.full-width section .scroll {
+  position: relative;
+  width: 3rem;
+  height: 4.5rem;
+  border-radius: 1.4rem;
+  background: transparent;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+.single-card {
+  background: rgba(0, 0, 255, 0.3);
+}
+.multi-card {
+  background: rgba(0, 255, 12, 0.3);
+}
+.multi-card::nth-child(even) {
+  background: rgba(0, 255, 12, 0.5);
+}
 @media (min-width: 700px) {
   .menu-nav {
     display: flex;

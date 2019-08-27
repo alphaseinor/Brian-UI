@@ -1,0 +1,52 @@
+.full-width{
+  background: 
+    linear-gradient(
+      rgba(255, 255, 255, .7),
+      rgba(140, 100, 255, 0.2) 
+    ), url(../img/abstractSmall.png);
+  height: 90vh;
+  section{
+    opacity: 90;
+    position: relative;
+    top:10%;
+    text-align: center;
+    h1{
+      color: @main-color;
+      font-size: 3rem;
+    }
+    h2{
+      color: @main-color;
+      font-size: 2rem;
+    }
+    .mouse{
+      position: relative;
+      margin-top: 2rem;
+      left: 43%;
+    }
+    .scroll{
+      position: relative;
+      width: 3rem;
+      height: 4.5rem;
+      border-radius: 1.4rem;
+      background:transparent;
+      border: 2px solid @main-color;
+      overflow: hidden;
+    }
+  }
+}
+
+.single-card{
+  background: rgba(0, 0, 255, .3);
+}
+
+.multi-card{
+  background: rgba(0, 255, 12, .3);
+
+  &::nth-child(even){
+    background: rgba(0, 255, 12, .5);
+  }
+}
+
+.card-box{
+
+}
