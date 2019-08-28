@@ -148,6 +148,10 @@ a:hover {
 .row h1 {
   font-size: 1.75rem;
 }
+main {
+  position: relative;
+  top: 3.5rem;
+}
 .login-box {
   visibility: hidden;
   position: absolute;
@@ -316,6 +320,87 @@ header ul li {
 }
 header .show {
   visibility: visible;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.full-width {
+  height: 80vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(140, 100, 255, 0.2)), url(../img/abstractSmall.png);
+  background-size: cover;
+  padding: 5vh;
+}
+.full-width section {
+  opacity: 90;
+  text-align: center;
+}
+.full-width section h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+.full-width section h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+.card-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  border: 2px #fff solid;
+}
+.card-box .card-header h2 {
+  font-size: 1.5rem;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  opacity: 0.7;
+  border-radius: 0.5rem;
+}
+.card-box .card-body {
+  margin: 0.5rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 1rem;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+}
+.card-box .card-text {
+  color: #000;
+}
+.card-box .card-footer a {
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #000;
+  border-radius: 0.5rem;
+  opacity: 0.7;
+}
+.card-box .card-footer a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.single-card .card-box {
+  color: #fff;
+  background: url("../img/pen-paper.png");
+  background-size: cover;
+}
+.discover {
+  background: url("../img/discover.png");
+  background-size: cover;
+}
+.form {
+  background: url("../img/form.png");
+  background-size: cover;
+}
+.design {
+  background: url("../img/design.png");
+  background-size: cover;
 }
 @media (min-width: 700px) {
   .menu-nav {
