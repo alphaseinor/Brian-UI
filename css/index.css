@@ -339,22 +339,8 @@ header .show {
   color: #fff;
   font-size: 2rem;
 }
-.full-width section .mouse {
-  position: relative;
-  margin-top: 2rem;
-  left: 43%;
-}
-.full-width section .scroll {
-  position: relative;
-  width: 3rem;
-  height: 4.5rem;
-  border-radius: 1.4rem;
-  background: transparent;
-  border: 2px solid #fff;
-  overflow: hidden;
-}
-.single-card {
-  background: rgba(0, 0, 255, 0.3);
+card-box {
+  @custom-flex (column, space-between, center);
 }
 .multi-card {
   background: rgba(0, 255, 12, 0.3);
